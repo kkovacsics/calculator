@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+    box-shadow: 3px 3px 5px #ddd;
+    padding: 1rem;
+    width: 29rem;
+}
+
+.display {
+    border: 1px solid #ddd;
+    font-size: 1.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    text-align: right;
+}
+
+.operators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+.operator {
+    background-color: #ccc;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    color: rgb(77, 143, 253);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    transition: all .3s;
+    width: 6rem;
+}
+.operator:hover {
+    background-color: #ccc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    user-select: none;
+}
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    line-height: 3rem;
+    padding: 0;
+    width: 20rem;
+}
+.number {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all .3s;
+    width: 6rem;
+}
+.number:last-child {
+    color: rgb(214, 16, 16);
+}
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+.number:hover {
+    background-color:  rgba(0, 0, 0, 0.1);
+}
+
+.equals {
+    background-color:  rgba(77, 143, 253, 0.8);
+    border: 1px solid #ddd;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 15rem;
+    text-align: center;
+    transition: all .3s;
+    width: 6rem;
+}
+.equals:hover {
+    background-color: rgb(77, 143, 253);
+}
