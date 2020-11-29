@@ -37,7 +37,7 @@ function handleOperator(buttonTxt) {
 }
 
 function handleNumber(buttonTxt) {
-    if(display.classList.contains('computed')){     // computed value in it
+    if (display.classList.contains('computed')) {     // computed value in it
         stack.length = 0;                           // empty the stack
         display.classList.remove('computed');
     }
@@ -64,7 +64,7 @@ function handleEquals() {
         display.classList.add('error');
     else {
         let accumulator = stack.shift();
-        while(stack.length>=2){
+        while (stack.length >= 2) {
             accumulator = operations[stack.shift()](accumulator, stack.shift());
         }
         stack.push(accumulator);
@@ -75,9 +75,9 @@ function handleEquals() {
 
 function stackToDisplay() {
     display.textContent = stack.join('');
-    if(display.textContent.length<=26)
+    if (display.textContent.length <= 26)
         display.classList.remove('medium', 'mini');
-    else if(display.textContent.length<=46){
+    else if (display.textContent.length <= 46) {
         display.classList.remove('mini');
         display.classList.add('medium');
     }
