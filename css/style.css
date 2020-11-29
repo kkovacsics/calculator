@@ -52,9 +52,11 @@ body {
     user-select: none;
 }
 .numbers {
+    align-content: space-between;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    height: 15.5rem;
     line-height: 3rem;
     padding: 0;
     width: 20rem;
@@ -70,9 +72,6 @@ body {
 }
 .number:last-child {
     color: rgb(214, 16, 16);
-}
-.margin-bottom {
-    margin-bottom: 1rem;
 }
 .number:hover {
     background-color:  rgba(0, 0, 0, 0.1);
